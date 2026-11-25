@@ -1,0 +1,9 @@
+{
+  "corpus_articles": 342,
+  "chemical_entity_nodes": 30655,
+  "entity_to_entity_relations": 41470,
+  "papers_with_extracted_entities": 342,
+  "papers_without_extracted_entities": [],
+  "entity_source_coverage_check": "342/342 records marked OK in coverage_per_paper.csv",
+  "note": "Frozen corpus title list and entity-source coverage record. This is not a full bibliographic export."
+}

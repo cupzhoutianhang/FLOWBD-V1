@@ -1,0 +1,22 @@
+{
+  "frozen_at": "2026-11-06 16:34:29",
+  "question_count": 50,
+  "artifacts": {
+    "questions_governance.jsonl": "f560cc707824a5fe",
+    "题集草案_v2_50题.md": "d4402a0c6cdf9680",
+    "评分规则_scoring_rules.md": "61704c0263b0daec",
+    "evidence_map.csv": "702358c8c5bd544c",
+    "semantic_review_14edges.csv": "0ec27a4cd29691bb",
+    "需补核证据清单.csv": "1dcff54ddfe87bc4",
+    "注入示例_injection_examples.txt": "c55a0434f4723e35"
+  },
+  "code": {
+    "..\\..\\src\\agent\\tiered_governance.py": "30ea618d72588b50",
+    "run_governance_experiment.py": "1dce1e5ecbb4020e"
+  },
+  "evidence_data": {
+    "final_case": "08ecd223ab6c1eec",
+    "confirmed_v2": "1fb3a747bc424eda"
+  },
+  "note": "冻结快照; 题面不含评分要点/标准答案; 评分要点在 评分规则_scoring_rules.md 与草案, 不进模型输入。"
+}

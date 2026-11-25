@@ -1,0 +1,116 @@
+[
+  {
+    "no": "E1",
+    "blind_patch": "X1",
+    "gov_old_blind": "R083",
+    "old_scores": [
+      4,
+      5,
+      2,
+      4
+    ],
+    "new_scores": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "old_mean": 3.75,
+    "new_mean": 4.0
+  },
+  {
+    "no": "E3",
+    "blind_patch": "X2",
+    "gov_old_blind": "R034",
+    "old_scores": [
+      4,
+      4,
+      1,
+      4
+    ],
+    "new_scores": [
+      5,
+      5,
+      5,
+      5
+    ],
+    "old_mean": 3.25,
+    "new_mean": 5.0
+  },
+  {
+    "no": "E4",
+    "blind_patch": "X3",
+    "gov_old_blind": "R088",
+    "old_scores": [
+      4,
+      5,
+      3,
+      5
+    ],
+    "new_scores": [
+      5,
+      5,
+      5,
+      5
+    ],
+    "old_mean": 4.25,
+    "new_mean": 5.0
+  },
+  {
+    "no": "E2",
+    "blind_patch": "X4",
+    "gov_old_blind": "R053",
+    "old_scores": [
+      4,
+      4,
+      1,
+      4
+    ],
+    "new_scores": [
+      4,
+      4,
+      2,
+      4
+    ],
+    "old_mean": 3.25,
+    "new_mean": 3.5
+  },
+  {
+    "no": "R-D3",
+    "blind_patch": "X5",
+    "gov_old_blind": "R077",
+    "old_scores": [
+      5,
+      5,
+      5,
+      5
+    ],
+    "new_scores": [
+      5,
+      5,
+      5,
+      5
+    ],
+    "old_mean": 5.0,
+    "new_mean": 5.0
+  },
+  {
+    "no": "R-D4",
+    "blind_patch": "X6",
+    "gov_old_blind": "R076",
+    "old_scores": [
+      5,
+      5,
+      5,
+      5
+    ],
+    "new_scores": [
+      5,
+      5,
+      5,
+      5
+    ],
+    "old_mean": 5.0,
+    "new_mean": 5.0
+  }
+]

@@ -1,0 +1,5 @@
+# UI and three precomputed cases; not a locked environment
+streamlit>=1.38,<2
+matplotlib
+pandas
+numpy

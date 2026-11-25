@@ -1,0 +1,15 @@
+{
+  "generation_model": "kimi-k2.6",
+  "temperature": 1.0,
+  "embedding": "BGE-M3",
+  "reranker": "bge-reranker-base",
+  "parent_chunk_chars": 1500,
+  "parent_overlap_chars": 200,
+  "child_chunk_chars": 500,
+  "child_overlap_chars": 150,
+  "top_k": 30,
+  "governance_max_records": 8,
+  "questions_with_governance": 38,
+  "historical_MinerU_version": null,
+  "scope_note": "已留存代码及日志支持的配置；不据此重建未保存的历史prompt。六条故障后补跑回答按原材料包编号纳入，未在本次修订重跑。"
+}

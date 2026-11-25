@@ -1,0 +1,83 @@
+// 水系有机液流电池(AORFB)活性材料分子工程谱系 — 统一主图(8节点双轨)
+// 统一样式：rankdir=LR / 白底 / 圆角矩形 / 底部图例 / 旧→新
+// 数据来源：lineage_cases_unified/aorfb_active_materials/{nodes.csv,edges.csv}
+// 蓝(路线A·醌/蒽醌)/绿(路线B·紫精)双轨；三线型：实线/点划线(基线)/虚线(路线)
+// 化学式下标用 HTML-like <SUB> 保证正确渲染
+digraph aorfb_lineage {
+  graph [rankdir=LR, splines=spline, newrank=true, bgcolor="white",
+         fontname="Microsoft YaHei", fontsize=12, pad=0.10, margin=0,
+         ranksep=0.62, nodesep=0.55, ratio=compress,
+         labelloc=b, labeljust=c,
+         label=<
+<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="10" CELLPADDING="3">
+ <TR>
+  <TD BGCOLOR="#E5E7EB"><FONT POINT-SIZE="10" COLOR="#374151">　无机金属基线　</FONT></TD>
+  <TD BGCOLOR="#DBEAFE"><FONT POINT-SIZE="10" COLOR="#1E3A8A">　路线A·醌/蒽醌负极　</FONT></TD>
+  <TD BGCOLOR="#DCFCE7"><FONT POINT-SIZE="10" COLOR="#14532D">　路线B·紫精负极　</FONT></TD>
+  <TD><FONT POINT-SIZE="10" COLOR="#111827">　━━━ 直接演化</FONT></TD>
+  <TD><FONT POINT-SIZE="10" COLOR="#C65A00">━·━·━ 基线比较</FONT></TD>
+  <TD><FONT POINT-SIZE="10" COLOR="#71839B">- - - 路线归类</FONT></TD>
+ </TR>
+</TABLE>>];
+  node  [shape=box, style="rounded,filled", fontname="Microsoft YaHei", fontsize=11,
+         margin="0.14,0.09", penwidth=1.4, fontcolor="#111827"];
+  edge  [fontname="Microsoft YaHei", fontsize=9, arrowsize=0.8];
+
+  // ---- 无机金属基线(灰) ----
+  N00 [label=<金属基(全钒等)<BR/>无机水系RFB<BR/>(基线)>, fillcolor="#E5E7EB", color="#6B7280"];
+
+  // ---- 路线A 醌/蒽醌负极(蓝) ----
+  A03 [label=<9,10-AQDS//Br<SUB>2</SUB><BR/>无金属酸性RFB<BR/>OCV 0.7V>, fillcolor="#DBEAFE", color="#2563EB"];
+  A04 [label=<2,6-DHAQ//K<SUB>4</SUB>Fe(CN)<SUB>6</SUB><BR/>碱性AORFB<BR/>OCV 1.20V>, fillcolor="#DBEAFE", color="#2563EB"];
+  A06 [label=<2,6-DBEAQ//K<SUB>4</SUB>Fe(CN)<SUB>6</SUB><BR/>碱性·羧酸端基>, fillcolor="#DBEAFE", color="#2563EB"];
+  A07 [label=<2,6-DPPEAQ//K<SUB>4</SUB>Fe(CN)<SUB>6</SUB><BR/>近中性·磷酸基>, fillcolor="#DBEAFE", color="#2563EB"];
+
+  // ---- 路线B 紫精负极(绿) ----
+  B01 [label=<MV//4-HO-TEMPO<BR/>全有机AORFB<BR/>单电子>, fillcolor="#DCFCE7", color="#16A34A"];
+  B02 [label=<季铵化双电子紫精<BR/>AORFB·双电子>, fillcolor="#DCFCE7", color="#16A34A"];
+  B05 [label=<BTMAP-Vi//二茂铁<BR/>高稳定AORFB>, fillcolor="#DCFCE7", color="#16A34A"];
+
+  // ==== 直接演化 solid ====
+  edge [color="#111827", penwidth=1.8, style=solid];
+  A03 -> A04 [label="IMPROVES"];
+  A04 -> A06 [label="ADAPTS"];
+  A06 -> A07 [label="EXTENDS"];
+  B01 -> B02 [label="IMPROVES"];
+
+  // ==== 基线性能比较 dash_dot(占位 dashed, 后处理注入点划线) ====
+  edge [color="#C65A00", penwidth=1.5, style=dashed];
+  N00 -> A03 [label="基线比较", class="rel-basecmp"];
+  N00 -> B01 [label="基线比较", class="rel-basecmp"];
+
+  // ==== 路线关联 dashed ====
+  edge [color="#71839B", penwidth=1.3, style=dashed];
+  B02 -> B05 [label="路线归类", class="rel-route"];
+
+  // ---- 年份轴(高权重保持水平) ----
+  { node [shape=plaintext, style="", fontcolor="#6B7280", fontsize=10];
+    ybase [label="基线"]; y2014 [label="2014"]; y2015 [label="2015"];
+    y2016 [label="2016"]; y2017 [label="2017"]; y2018 [label="2018"]; y2019 [label="2019"];
+    edge [color="#9CA3AF", penwidth=1.0, style=solid, arrowhead=none, class="axis", weight=100];
+    ybase -> y2014 -> y2015 -> y2016 -> y2017 -> y2018 -> y2019;
+  }
+  // 绑定节点到年份列
+  { rank=same; ybase; N00; }
+  { rank=same; y2014; A03; }
+  { rank=same; y2015; A04; }
+  { rank=same; y2016; B01; }
+  { rank=same; y2017; B02; B05; }
+  { rank=same; y2018; A06; }
+  { rank=same; y2019; A07; }
+
+  // 年份轴置顶(同列 flat 边：年份在上)
+  ybase -> N00 [style=invis];
+  y2014 -> A03 [style=invis];
+  y2015 -> A04 [style=invis];
+  y2016 -> B01 [style=invis];
+  y2017 -> B02 [style=invis];
+  y2018 -> A06 [style=invis];
+  y2019 -> A07 [style=invis];
+
+  // 列内竖直次序(蓝轨在上、绿轨在下)
+  A03 -> B01 [style=invis];
+}

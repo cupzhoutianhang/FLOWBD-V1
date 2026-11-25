@@ -1,0 +1,358 @@
+version: "1.1.1"
+# ============================================================
+# 版本变更 (v1.1.1, 2026-07-01):
+#   窄口径关键词补丁, 目的是让 v1 全语料预处理里 105 篇 unknown 中的漏抓
+#   进入正确 domain, 同时不引入假阳.
+#   1) thermal_storage: 加 蓄冷/蓄热/吸附式蓄冷/复叠式蓄热 等完整短语
+#   2) thermochemical_heat_storage: 加 热化学储能/化学储热材料/钙基储能材料/水合盐化学储热/化学吸附储热
+#   3) latent_heat_storage: 加 复合相变材料/定形相变材料/相变热沉/相变储能技术/相变储热材料
+#   4) battery_thermal_management (application_context): 加 储能电池热管理/电池包热管理 等完整短语
+#      严禁用 "电池包" / "散热" / "产热" 单独触发 → 未加短词
+#   5) hydrogen_production_only.unless_any_of: 加 氢能储运/热化学储热/热化学储能
+#   6) hydrogen_production_only.keywords: 加 甲烷干重整 / 光催化制氢
+#   7) mechanical_storage / compressed_air_storage: 加 压气储能
+#   8) system_integration: 加 光储直驱 (光储充已存在)
+#   9) application_contexts.laboratory_material: 由代码兜底改为需明确正例; keywords 由空改为窄短语集
+#  10) 明确未加: 介孔碳 / 生物炭 / 木质素衍生炭 / 电极材料 / 多孔电极 / 真实多孔电极 / 换热 / 传热 / 冷却
+# ============================================================
+
+# 每次命中的权重按位置区分. 单个关键词在同一位置只计一次 (由代码去重).
+weights:
+  title: 3
+  abstract: 2
+  heading: 1
+
+# 决策阈值
+thresholds:
+  min_primary_score: 3            # top domain 分数 >= 此值才可作 primary; 否则 unknown / non_storage
+  primary_margin_ratio: 1.5       # top / max(second, 0.5) >= 此值才拉开 primary; 否则 candidate
+  min_secondary_score: 2          # domain 分数 >= 此值可作 secondary
+  min_candidate_score: 2          # domain 分数 >= 此值可进 candidates
+  method_type_secondary_min: 2    # method_type 分数 >= 此值可作 secondary
+  non_storage_override_score: 3   # 若 top storage 分 < 此值且 non_storage 信号命中, 判 non_storage
+
+# ============================================================
+# storage_domain 关键词表 (每 domain 只放"具备辨识度"的具体术语)
+# ============================================================
+
+storage_domains:
+
+  electrochemical_storage:
+    keywords:
+      - 锂离子电池
+      - 锂电池
+      - 钠离子电池
+      - 钾离子电池
+      - 锌离子电池
+      - 锂硫电池
+      - 液流电池
+      - 全钒液流
+      - 全钒电池
+      - 铁铬液流
+      - 锌溴液流
+      - 超级电容
+      - 超级电容器
+      - 赝电容
+      - 固态电池
+      - 固态电解质
+      - 二次电池
+      - 高熵氧化物储锂
+      - 储锂性能
+      - 储钠性能
+      - 储钾性能
+      - 电化学储能
+      - 锂二次电池
+      - 硫化物固态
+      - MOFs基超级电容
+      - MOFs基超级电容器
+      - MOFs 基超级电容器
+      - MOFs基材料在超级电容器
+    exclusions:
+      # 燃料电池论文若同时无"储氢/氢储能/再生"上下文, 不算电化学储能
+      - if_all_of: [燃料电池]
+        unless_any_of: [储氢, 氢储能, 液氢, 再生燃料电池]
+        note: fuel_cell_alone_is_not_electrochemical_storage
+    subfields:
+      lithium_ion_battery:
+        keywords: [锂离子电池, 锂电池, 磷酸铁锂, LiFePO4, LFP, NCM, 三元正极, 石墨负极,
+                    锂二次电池, 储锂性能, 高熵氧化物储锂, 钙钛矿型高熵氧化物储锂]
+      sodium_ion_battery:
+        keywords: [钠离子电池, 钠离子, 层状钠, NaMO2, Na3V2, P2型, O3型, 硬碳钠, 储钠]
+      potassium_ion_battery:
+        keywords: [钾离子电池, 钾离子, K0.44MnO2]
+      multivalent_battery:
+        keywords: [锌离子电池, 锌空气电池, 镁离子电池, 铝离子电池, 水系锌离子, 锌溴电池, 锌电池]
+      solid_state_battery:
+        keywords: [固态电池, 全固态, 硫化物固态, 硫银锗矿, LGPS, Li10GeP2S12]
+      flow_battery:
+        keywords: [液流电池, 全钒液流, 全钒电池, VRFB, RFB, 铁铬液流, 锌溴液流]
+      supercapacitor:
+        keywords: [超级电容, 超级电容器, 赝电容, EDLC, MOFs基超级电容, MOFs基超级电容器,
+                    MOFs 基超级电容器, MOFs基材料在超级电容器]
+
+  thermal_storage:
+    keywords:
+      - 相变材料
+      - 相变储能
+      - 相变储热
+      - PCM
+      - 潜热储能
+      - 潜热储热
+      - 潜热
+      - 显热储热
+      - 熔盐储热
+      - 熔融盐储热
+      - 热化学储热
+      - 热化学储能              # v1.1.1
+      - 吸附式储热
+      - 蓄热
+      - 蓄冷
+      - 复叠式蓄热              # v1.1.1
+      - 吸附式蓄冷              # v1.1.1
+      - 吸附蓄冷                # v1.1.1
+      - 吸附蓄热                # v1.1.1
+      - 化学储热材料            # v1.1.1
+      - 钙基储能材料            # v1.1.1
+      - 三水醋酸钠
+      - 复合相变材料
+      - 定形相变材料            # v1.1.1
+      - 相变热沉                # v1.1.1
+      - 相变储能技术            # v1.1.1
+      - 相变储热材料            # v1.1.1
+      - 相变焓
+      - 过冷度
+      - 相变温度
+      - 储/放热
+      - 储放热
+      - 相变储能材料
+      - 复合相变
+      - 低共熔相变储能材料
+      - 有机相变
+      - 石蜡
+      - 水合盐
+    subfields:
+      latent_heat_storage:
+        keywords: [相变材料, 相变储能, 相变储热, PCM, 潜热, 三水醋酸钠, 相变焓, 过冷度,
+                    相变温度, 复合相变材料, 低共熔相变储能材料, 有机相变, 石蜡, 水合盐,
+                    定形相变材料, 相变热沉, 相变储能技术, 相变储热材料]
+      sensible_heat_storage:
+        keywords: [显热储热, 熔融盐储热, 熔盐储热]
+      thermochemical_heat_storage:
+        keywords: [热化学储热, 热化学储能, 化学储热材料, 钙基储能材料,
+                    水合盐化学储热, 吸附式储热, 化学吸附储热, 反应床]
+
+  mechanical_storage:
+    keywords:
+      - 压缩空气储能
+      - 压气储能                # v1.1.1
+      - CAES
+      - 液态空气储能
+      - LAES
+      - 液空储能
+      - 压缩二氧化碳储能
+      - CO2储能
+      - CCES
+      - CCPES
+      - TC-CCES
+      - 跨临界压缩二氧化碳
+      - 跨临界CO2
+      - 超临界CO2储能
+      - 抽水蓄能
+      - 抽水储能
+      - 飞轮储能
+      - 飞轮蓄能
+    subfields:
+      compressed_air_storage:
+        keywords: [压缩空气储能, 压气储能, CAES]
+      liquid_air_storage:
+        keywords: [液态空气储能, LAES, 液空储能]
+      compressed_co2_storage:
+        keywords: [压缩二氧化碳储能, CO2储能, CCES, CCPES, TC-CCES,
+                    跨临界压缩二氧化碳, 跨临界CO2, 超临界CO2储能]
+      pumped_hydro_storage:
+        keywords: [抽水蓄能, 抽水储能]
+      flywheel_storage:
+        keywords: [飞轮储能, 飞轮蓄能]
+
+  electromagnetic_storage:
+    # v1.1: 只允许 SMES 一类明确电磁储能. 超级电容归 electrochemical.
+    keywords:
+      - SMES
+      - 超导磁体储能
+      - 超导储能
+      - 超导磁储能
+      - 超导线圈储能
+      - 超导磁体
+    subfields:
+      superconducting_magnetic_storage:
+        keywords: [SMES, 超导磁体储能, 超导储能, 超导磁储能, 超导线圈储能, 超导磁体]
+
+  chemical_energy_storage:
+    # 严格区分: 制氢 (能量转换) 不进入; 只有"储氢/氢储能/液氢储能/氨储能"命中
+    keywords:
+      - 储氢
+      - 氢储能
+      - 液氢储能
+      - 液氢
+      - 氨储能
+      - 氢能储运
+      - 氢液化循环
+    subfields:
+      hydrogen_storage:
+        keywords: [储氢, 氢储能, 液氢储能, 液氢, 氢能储运, 氢液化循环]
+
+  system_integration:
+    keywords:
+      - 综合能源系统
+      - 微网
+      - 微电网
+      - 光储充
+      - 光储直驱                # v1.1.1 (光储充 已在)
+      - 电池管理系统
+      - BMS
+      - 容量配置
+      - 电-氢协调
+      - 电氢协调
+      - 优化调度
+      - 混合储能
+      - 冷热电联供
+      - 新型电力系统
+      - 能源枢纽
+      - 光伏储能系统
+      - 风光储
+    subfields:
+      hybrid_storage_system:
+        keywords: [混合储能, 冷热电联供]
+
+  cross_domain_method:
+    # 只在其他任何 storage domain 都没有命中时才计入 (由代码 gate)
+    keywords:
+      - 密度泛函
+      - 第一性原理
+      - DFT
+      - 分子动力学
+      - 机器学习模型
+      - 深度学习模型
+      - 神经网络模型
+      - 遗传算法
+      - 粒子群算法
+      - 元启发式
+      - 蒙特卡罗方法
+
+# ============================================================
+# non_storage 信号 (排除性判定)
+# ============================================================
+
+non_storage_signals:
+  fuel_cell_only:
+    keywords: [燃料电池, 质子交换膜燃料电池, PEMFC, 固体氧化物燃料电池]
+    unless_any_of: [储氢, 氢储能, 液氢, 再生燃料电池]
+  hydrogen_production_only:
+    # v1.1.1: 加 甲烷干重整/光催化制氢 关键词;
+    #         unless_any_of 加 氢能储运/热化学储热/热化学储能, 保护储氢及热化学储热语境
+    keywords: [制氢, 电解水制氢, 甲烷重整, 甲烷干重整, 甲烷化, 电解制氢, 光催化制氢]
+    unless_any_of: [储氢, 氢储能, 液氢储能, 氢能储运, 热化学储热, 热化学储能]
+  catalysis_only:
+    keywords: [光催化, 电催化合成, 催化研究]
+    unless_any_of: [储能, 电池, 电极材料, 超级电容]
+  separation_membrane_generic:
+    keywords: [油水分离, 分离膜]
+    unless_any_of: [液流, 离子选择膜, 离子交换膜, 电池]
+  aerogel_generic:
+    keywords: [气凝胶]
+    unless_any_of: [储能, 电极, 储热, 相变]
+  battery_recycling:
+    keywords: [电池回收, 退役电池, LFP回收, 正极修复]
+    unless_any_of: [储能应用, 二次应用, 混合储能]
+  patent_analysis_topic:
+    keywords: [专利分析, 专利态势, 专利计量]
+    unless_any_of: []      # 专利分析类论文默认 non_storage 语境
+  co2_capture:
+    keywords: [CO2捕集, 碳捕集, CCS]
+    unless_any_of: [CO2储能, 跨临界]
+
+# ============================================================
+# technology_variant (只覆盖储能路线/化学体系变体; 材料体系不进这里)
+# ============================================================
+
+technology_variants:
+  vanadium_redox_flow:
+    keywords: [全钒液流, 全钒电池, 全钒液流电池, VRFB]
+  iron_chromium_flow:
+    keywords: [铁铬液流, 铁铬电池, Fe/Cr flow]
+  zinc_bromine_flow:
+    keywords: [锌溴液流, 锌溴电池, ZnBr flow]
+  lithium_sulfur:
+    keywords: [锂硫电池, Li-S battery, 锂-硫电池]
+  aqueous_zinc_ion:
+    keywords: [水系锌离子, 水系Zn离子, 水系锌离子电池]
+  organic_pcm:
+    keywords: [有机相变材料, 硬脂酸, 脂肪酸相变]
+  hydrated_salt_pcm:
+    keywords: [水合盐相变, 三水醋酸钠, 十水硫酸钠, Na2SO4·10H2O]
+  paraffin_pcm:
+    keywords: [石蜡, 复合石蜡]
+
+# ============================================================
+# application_context (多标签)
+# ============================================================
+
+application_contexts:
+  grid:
+    keywords: [电网, 调峰, 调频, 电力系统, 电力调峰, 削峰填谷]
+  vehicle:
+    keywords: [车用, 电动汽车, EV, 汽车动力]
+  building_hvac:
+    keywords: [供暖, 供冷, 家用热水, 建筑热管理, 建筑供冷, 建筑供暖, 空调, 热水系统]
+  industrial_heat:
+    keywords: [工业余热, 工业供能, 冷能回收, 液氢储能中冷能, 余热利用]
+  portable_device:
+    keywords: [便携电子, 可穿戴]
+  renewable_energy_integration:
+    keywords: [光伏, 风电, 光储, 新能源发电, 新能源消纳, 太阳能]
+  battery_thermal_management:
+    # v1.1.1: 只加"完整短语", 严禁用 "电池包"/"散热"/"产热" 单独触发
+    keywords: [电池热管理, 电池组热管理, 电池散热, 锂离子电池热管理, 电池直冷,
+                储能电池热管理, 储能电池产热, 储能电池散热,
+                电池包热管理, 电池包散热, 动力电池热管理]
+  laboratory_material:
+    # v1.1.1: 不再作为代码兜底默认; 仅在原文明确出现"实验室材料级"信号时才命中
+    keywords: [实验室材料制备, 材料性能实验, 实验室合成]
+  unclear:
+    keywords: []            # 保留但不主动命中
+
+# ============================================================
+# method_type (每类只放具备辨识度的动词/名词短语)
+# ============================================================
+
+method_types:
+  material_design:
+    keywords: [材料设计, 组分设计, 高熵氧化物, 高熵材料, 空位调控, 掺杂调控, 结构工程, 阳离子空位, 提升储锂性能]
+  synthesis_process:
+    keywords: [制备, 合成, 溶胶-凝胶, 水热法, 熔融共混, 静电纺丝, 化学气相沉积, 改性制备, 改性研究]
+  interface_engineering:
+    keywords: [界面工程, 涂层, SEI膜]
+  electrode_engineering:
+    keywords: [电极结构, 电极优化设计, 3D电极]
+  electrolyte_engineering:
+    keywords: [电解液优化, 电解质改性, 电解液添加剂]
+  membrane_engineering:
+    keywords: [离子选择膜, 离子交换膜, 隔膜设计]
+  device_design:
+    keywords: [装置设计, 反应器设计, 储热器, 电堆均一性, 换热器设计, 储能器件设计,
+                电堆结构, 相变储热器, 电池热管理装置]
+  system_design:
+    keywords: [系统设计, 流程设计, 系统集成, 蓄冷流程, 系统构建, 循环集成, 集成热力系统,
+                冷能回收补偿流程, 液化循环]
+  model_simulation:
+    keywords: [数学模型, 动态数学模型, 动态模型, 仿真, 数值模拟, CFD, 有限元, 模型验证,
+                边界条件, 控制方程, 动态特性, 数值仿真, 仿真分析, k-ε 模型]
+  control_strategy:
+    keywords: [控制策略, PID, MPC, 调度策略]
+  optimization_algorithm:
+    keywords: [遗传算法, 粒子群, NSGA, 元启发式]
+  characterization_only:
+    keywords: []      # 保守: v1 不主动命中, 需人工确认
+  general_method:
+    keywords: [综述, 综述了, 研究进展, 研究现状, 归纳总结, 现状与展望, 阐述了, 本文归纳,
+                本文综述, 本文对现有的, 本文主要介绍]

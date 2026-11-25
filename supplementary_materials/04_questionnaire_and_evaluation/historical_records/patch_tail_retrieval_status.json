@@ -1,0 +1,123 @@
+{
+  "ts": "2026-11-09 17:26:37",
+  "health_precheck": {
+    "load_state": "Loaded",
+    "loading_progress": {
+      "loading_progress": "100%"
+    }
+  },
+  "tail_qids": [
+    "R-D3",
+    "R-D4",
+    "E1",
+    "E2",
+    "E3",
+    "E4"
+  ],
+  "paused": false,
+  "per_question": [
+    {
+      "no": "R-D3",
+      "run_status": "ok",
+      "vector_hit": 38,
+      "channels": [
+        "graph_entities(0)",
+        "graph_relations(0)",
+        "vector(38)",
+        "molecule(0)",
+        "web(0)"
+      ],
+      "doc_sources": 15,
+      "governance_injected_count": 8,
+      "elapsed_sec": 210.5,
+      "passed_health": true,
+      "error": null
+    },
+    {
+      "no": "R-D4",
+      "run_status": "ok",
+      "vector_hit": 35,
+      "channels": [
+        "graph_entities(5)",
+        "graph_relations(0)",
+        "vector(35)",
+        "molecule(0)",
+        "web(0)"
+      ],
+      "doc_sources": 17,
+      "governance_injected_count": 5,
+      "elapsed_sec": 285.4,
+      "passed_health": true,
+      "error": null
+    },
+    {
+      "no": "E1",
+      "run_status": "ok",
+      "vector_hit": 30,
+      "channels": [
+        "graph_entities(5)",
+        "graph_relations(30)",
+        "vector(30)",
+        "molecule(0)",
+        "web(0)"
+      ],
+      "doc_sources": 9,
+      "governance_injected_count": 0,
+      "elapsed_sec": 186.8,
+      "passed_health": true,
+      "error": null
+    },
+    {
+      "no": "E2",
+      "run_status": "ok",
+      "vector_hit": 30,
+      "channels": [
+        "graph_entities(5)",
+        "graph_relations(423)",
+        "vector(30)",
+        "molecule(0)",
+        "web(0)"
+      ],
+      "doc_sources": 16,
+      "governance_injected_count": 0,
+      "elapsed_sec": 356.6,
+      "passed_health": true,
+      "error": null
+    },
+    {
+      "no": "E3",
+      "run_status": "ok",
+      "vector_hit": 30,
+      "channels": [
+        "graph_entities(5)",
+        "graph_relations(337)",
+        "vector(30)",
+        "molecule(0)",
+        "web(0)"
+      ],
+      "doc_sources": 15,
+      "governance_injected_count": 0,
+      "elapsed_sec": 347.1,
+      "passed_health": true,
+      "error": null
+    },
+    {
+      "no": "E4",
+      "run_status": "ok",
+      "vector_hit": 31,
+      "channels": [
+        "graph_entities(5)",
+        "graph_relations(0)",
+        "vector(31)",
+        "molecule(0)",
+        "web(0)"
+      ],
+      "doc_sources": 13,
+      "governance_injected_count": 1,
+      "elapsed_sec": 294.4,
+      "passed_health": true,
+      "error": null
+    }
+  ],
+  "note": "故障修复后补跑；每题须通过 vector>0 健康门；失败即暂停"
+}

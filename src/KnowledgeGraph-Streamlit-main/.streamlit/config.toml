@@ -1,0 +1,7 @@
+# FlowBD 主题（对齐 ui-demo 设计稿，色板与 ui_style.py 一致）
+[theme]
+base = "light"
+primaryColor = "#0f766e"
+backgroundColor = "#f6f5f2"
+secondaryBackgroundColor = "#ffffff"
+textColor = "#1c1917"

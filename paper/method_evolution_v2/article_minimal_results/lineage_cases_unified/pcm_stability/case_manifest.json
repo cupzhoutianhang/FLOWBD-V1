@@ -1,0 +1,58 @@
+{
+  "case_id": "pcm_stability",
+  "title_cn": "复合相变材料稳定性评价方法谱系",
+  "title_en": "PCM stability evaluation lineage",
+  "subtitle": "复合相变材料渗漏/稳定性与脂肪酸最佳质量含量测定方法的4分支并行谱系",
+  "research_domain": "复合相变材料（储热）稳定性/渗漏评价方法学",
+  "corpus_scope": "FlowBD 337篇中文储能文献语料（PDF→Markdown全文）+ 主论文可解析引用",
+  "source_document_count": 1,
+  "candidate_node_count": 8,
+  "verifiable_node_count": 8,
+  "main_figure_node_count": 8,
+  "direct_evolution_count": 1,
+  "baseline_comparison_count": 0,
+  "node_performance_comparison_count": 0,
+  "route_association_count": 0,
+  "route_figure_only_count": 0,
+  "all_nodes_year_start": 2004,
+  "all_nodes_year_end": 2021,
+  "main_figure_year_start": 2004,
+  "main_figure_year_end": 2021,
+  "year_start": 2004,
+  "year_end": 2021,
+  "branch_count": 4,
+  "evidence_boundary": "主论文（2021，语料内一次论文）引言可定位8种方法：本文提出的3种方法在语料内一次论文中可直接核验(in_corpus_verified)；其余5种前人方法及唯一ADAPTS关系仅在主论文引言转引文本层面可定位(review_text_locatable)，未对被引原文独立核验。",
+  "primary_source_status": "本文3种方法=语料内一次论文可核验；5种前人方法=引言转引，未独立核验被引原文",
+  "single_source_bias": "是（谱系来源集中于1篇语料内主论文引言）",
+  "recommended_use": "formal_case",
+  "figure_version": "unified-horizontal-v1（由原年份纵轴DAG改绘为横向时间双轨风格，8节点/4分支/1条confirmed边不变）",
+  "data_version": "1.1",
+  "last_updated": "2026-09-07",
+  "notes": "仅1条confirmed ADAPTS关系，无基线比较、无路线归类边；其余7节点为并行独立分支（非演化）。原始为年份纵轴DAG(lineage_graph_v2)，本交付为横向时间版，节点/分支/关系结论不变。",
+  "_derived": {
+    "main_figure_edge_count": 1,
+    "main_figure_edges_by_class": {
+      "direct_evolution": 1,
+      "baseline_comparison": 0,
+      "node_performance_comparison": 0,
+      "route_association": 0
+    },
+    "main_figure_edges_by_line_style": {
+      "solid": 1,
+      "dash_dot": 0,
+      "dashed": 0
+    },
+    "route_association_dataset_count": 0,
+    "route_association_figure_only_count": 0,
+    "main_figure_route_dataset": 0,
+    "main_figure_route_figure_only": 0,
+    "year_range_all_nodes": [
+      2004,
+      2021
+    ],
+    "year_range_main_figure": [
+      2004,
+      2021
+    ]
+  }
+}

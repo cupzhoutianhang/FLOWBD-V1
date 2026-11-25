@@ -1,0 +1,91 @@
+{
+  "origin": "Minimal contract fixture derived from the real 2026-10-22 UI failure; no credentials or runtime configs.",
+  "question": "纳米熔盐储热材料的高温熔融法具体工艺步骤是什么？",
+  "answer": "无法生成答案",
+  "answer_quality": {
+    "generation_status": "failed",
+    "operation_errors": [
+      "generation_failure:NativeAnswerError"
+    ],
+    "generation_input": {
+      "native_generation": {
+        "completion_verified": false
+      }
+    }
+  },
+  "doc_sources": [
+    {
+      "ref_id": 1,
+      "source": "制备方法对纳米熔盐储热性能及形成机理的影响",
+      "source_id": "DOC:08c3246b58bd51ea08c7",
+      "content": "(2)高温熔融法高温熔融法制备纳米熔盐按照以下步骤进行： $\\textcircled{1}$ 用电子天平按比例称取基盐和$\\mathrm { S i O } _ { 2 }$ 纳米颗粒样品； $\\textcircled{2}$ 将基盐样品放入石英坩埚中，设定加热温度 $3 0 0 \\mathrm { { ^ { c } C } }$ ，将基盐样品加热至熔融状"
+    }
+  ],
+  "evidence_graph": {
+    "nodes": [
+      {
+        "id": "METHOD:07b192f1441d",
+        "type": "METHOD",
+        "name": "高温熔融法",
+        "observations": [
+          {
+            "text": "高温熔融法制备纳米熔盐：称取基盐和SiO2纳米颗粒，基盐300℃熔融，加入纳米颗粒800 r/min搅拌，自然冷却至200℃备用",
+            "status": "candidate",
+            "prov": {
+              "ref_id": 31,
+              "paper_title": "制备方法对纳米熔盐储热性能及形成机理的影响（原PDF核对补充）",
+              "quote": "(2)高温熔融法高温熔融法制备纳米熔盐按照\n\n以下步骤进行：①用电子天平按比例称取基盐和\n\nSiO2 纳米颗粒样品；②将基盐样品放入石英坩埚中，\n\n设定加热温度 300℃，将基盐样品加热至熔融状态，\n\n放入磁力搅拌转子，初步搅拌后形成熔盐熔体；③\n将 SiO2 纳米颗粒样品放入熔盐熔体中，按照预设时\n间，以 800 r/min 转速匀速搅拌；④将搅拌完成后的\n\n纳米熔盐自然冷却至 200℃，放入真空干燥箱备用。",
+              "round": 2,
+              "ts": "2026-10-22T22:50:37",
+              "extractor": "kimi-k2.6",
+              "source_id": "SRC:dbd262f3a0741363bbed",
+              "location": "FlowBD系统/pdf_to_md/pdf/制备方法对纳米熔盐储热性能及形成机理的影响.pdf#page=3;section=1.2.2(2);sha256=b8954e8e2794e426d5ff8645375c3bc672161cacae31cc5856462b68e5c7be52"
+            },
+            "supporting_sources": [],
+            "text_variants": []
+          },
+          {
+            "text": "用电子天平按比例称取基盐和SiO2纳米颗粒样品",
+            "status": "candidate",
+            "prov": {
+              "ref_id": 31,
+              "paper_title": "制备方法对纳米熔盐储热性能及形成机理的影响（原PDF核对补充）",
+              "quote": "(2)高温熔融法高温熔融法制备纳米熔盐按照\n\n以下步骤进行：①用电子天平按比例称取基盐和\n\nSiO2 纳米颗粒样品；②将基盐样品放入石英坩埚中，\n\n设定加热温度 300℃，将基盐样品加热至熔融状态，\n\n放入磁力搅拌转子，初步搅拌后形成熔盐熔体；③\n将 SiO2 纳米颗粒样品放入熔盐熔体中，按照预设时\n间，以 800 r/min 转速匀速搅拌；④将搅拌完成后的\n\n纳米熔盐自然冷却至 200℃，放入真空干燥箱备用。",
+              "round": 4,
+              "ts": "2026-10-22T22:51:42",
+              "extractor": "kimi-k2.6",
+              "source_id": "SRC:dbd262f3a0741363bbed",
+              "location": "FlowBD系统/pdf_to_md/pdf/制备方法对纳米熔盐储热性能及形成机理的影响.pdf#page=3;section=1.2.2(2);sha256=b8954e8e2794e426d5ff8645375c3bc672161cacae31cc5856462b68e5c7be52"
+            },
+            "supporting_sources": [],
+            "text_variants": []
+          },
+          {
+            "text": "将基盐放入石英坩埚，加热至300℃熔融，放入磁力搅拌转子初步搅拌",
+            "status": "candidate",
+            "prov": {
+              "ref_id": 1,
+              "paper_title": "制备方法对纳米熔盐储热性能及形成机理的影响",
+              "quote": "$\\textcircled{2}$ 将基盐样品放入石英坩埚中，设定加热温度 $3 0 0 \\mathrm { { ^ { c } C } }$ ，将基盐样品加热至熔融状态，放入磁力搅拌转子，初步搅拌后形成熔盐熔体；",
+              "round": 4,
+              "ts": "2026-10-22T22:51:42",
+              "extractor": "kimi-k2.6",
+              "source_id": "SRC:c915c60efe24968bc778",
+              "location": "制备方法对纳米熔盐储热性能及形成机理的影响.json:methods_07_p03"
+            },
+            "supporting_sources": [],
+            "text_variants": []
+          }
+        ],
+        "created_round": 2
+      }
+    ],
+    "edges": [],
+    "stats": {
+      "nodes": 1,
+      "edges": 0
+    }
+  },
+  "iterations": [],
+  "eg_stop_reason": "答案生成失败；检索阶段判停：预算已尽，已有核心工艺步骤证据，配比和保温时间细节未显式给出但属次要信息。"
+}

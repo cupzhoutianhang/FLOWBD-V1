@@ -1,0 +1,50 @@
+{"no": "P-A1", "case": "PCM_复合相变材料", "dimension": "关系性质", "tier_tag": "T1·治理注入", "question": "谱系中\"Zhou 等确定 MA/EG 复合相变材料肉豆蔻酸最佳含量\"与\"孙建忠等扩散-渗出圈法\"之间，记录为哪一类演化关系？"}
+{"no": "P-A2", "case": "PCM_复合相变材料", "dimension": "关系性质", "tier_tag": "T1·治理注入", "question": "同一纳米熔盐储热研究中，高温熔融法与水溶液法之间记录为哪一类关系？"}
+{"no": "P-B1", "case": "PCM_复合相变材料", "dimension": "关系方向", "tier_tag": "T1·治理注入", "question": "扩散-渗出圈法这条借鉴关系，数据方向上谁是借鉴者、谁是来源？与图示箭头方向是否一致？"}
+{"no": "P-B2", "case": "PCM_复合相变材料", "dimension": "关系方向", "tier_tag": "T1·治理注入", "question": "纳米熔盐论文中高温熔融法与水溶液法的改进关系，哪个是改进方、哪个是被改进方？"}
+{"no": "P-C1", "case": "PCM_复合相变材料", "dimension": "对象与条件", "tier_tag": "T2·内容题", "question": "该相变材料论文\"本文提出\"的稳定性/渗漏评价方法有哪几种？分别属于哪类分支？"}
+{"no": "P-C2", "case": "PCM_复合相变材料", "dimension": "对象与条件", "tier_tag": "T3·待核", "question": "扩散-渗出圈法最早出现在数据集中的哪一年？该年份依据是什么层级的核查？"}
+{"no": "P-C3", "case": "PCM_复合相变材料", "dimension": "对象与条件", "tier_tag": "T3·待核", "question": "Zhou（2020）借鉴扩散-渗出圈法，具体用于确定哪种复合相变材料中哪种组分的最佳质量含量？"}
+{"no": "P-C4", "case": "PCM_复合相变材料", "dimension": "对象与条件", "tier_tag": "T2·内容题", "question": "本文\"渗透直径百分比判定法\"属于哪一类方法分支？用于解决稳定性评价中的什么问题？"}
+{"no": "P-C5", "case": "PCM_复合相变材料", "dimension": "对象与条件", "tier_tag": "T3·待核", "question": "Zhang 试纸观察法（2013）与本文目测逼近法（2021）是否属于同一方法分支？各属何类？"}
+{"no": "P-C6", "case": "PCM_复合相变材料", "dimension": "对象与条件", "tier_tag": "T3·待核", "question": "该 PCM 稳定性评价谱系覆盖哪几个技术分支？"}
+{"no": "P-D1", "case": "PCM_复合相变材料", "dimension": "范围与边界", "tier_tag": "T1·治理注入", "question": "扩散-渗出圈法借鉴关系的适用范围到哪为止？能否据此追溯 MA/EG 材料的后续研究或孙建忠方法更早来源？"}
+{"no": "P-D2", "case": "PCM_复合相变材料", "dimension": "范围与边界", "tier_tag": "T1+范围·治理注入", "question": "谱系中是否记录了\"扩散-渗出圈法被某方法替代（REPLACES）\"的关系？（压力测试）"}
+{"no": "P-D3", "case": "PCM_复合相变材料", "dimension": "范围与边界", "tier_tag": "T2/T3 混·待核", "question": "这条 PCM 谱系的证据是否已对被引原文独立核验？单一来源偏置如何？"}
+{"no": "P-D4", "case": "PCM_复合相变材料", "dimension": "范围与边界", "tier_tag": "术语边界·治理注入", "question": "扩散-渗出圈法这条关系能否称为已 confirmed？PCM 谱系能否自称达到完整历史或全领域演化？"}
+{"no": "P-D5", "case": "PCM_复合相变材料", "dimension": "范围与边界", "tier_tag": "T3·待核·边界", "question": "该 PCM 谱系的时间跨度是多少？能否据此宣称覆盖该评价方法的完整发展史？"}
+{"no": "P-D6", "case": "PCM_复合相变材料", "dimension": "范围与边界", "tier_tag": "T1+范围·治理注入", "question": "在本次人工校正查询范围内，除扩散-渗出圈法 ADAPTS 外，PCM 相关案例是否还有其它带正式 confirmed 文件记录的关系？"}
+{"no": "H-A1", "case": "HYD_热催化加氢", "dimension": "关系性质", "tier_tag": "T3·待核·内容题", "question": "甲基改性 Fe₂O₃@SiO₂（疏水）与 FeMn@Si（疏水）之间，谱系记录为哪一类演化关系？"}
+{"no": "H-A2", "case": "HYD_热催化加氢", "dimension": "关系性质", "tier_tag": "T3·待核·内容题", "question": "核壳限域与接力催化在该谱系中属于几条技术分支？"}
+{"no": "H-B1", "case": "HYD_热催化加氢", "dimension": "关系方向", "tier_tag": "T3·待核·内容题", "question": "FeMn@Si 疏水核壳催化剂与其前序甲基改性 Fe₂O₃@SiO₂ 的 EXTENDS 关系，方向从哪指向哪？"}
+{"no": "H-B2", "case": "HYD_热催化加氢", "dimension": "关系方向", "tier_tag": "T3·located_review_text·判断题", "question": "原文证据能否支持\"FeMn@Si 核壳催化剂是在 FeK/Al₂O₃@SiO₂ 体系基础上发展而来\"这一**成对**直接发展关系？请依据原文说明可支持到什么程度。"}
+{"no": "H-C1", "case": "HYD_热催化加氢", "dimension": "对象与条件", "tier_tag": "T3·located_review_text·内容题", "question": "该加氢谱系中 N01、N02 两个基线节点各代表哪类催化剂体系？它们与核壳限域/接力催化体系之间，记录的是直接演化关系还是基线比较？"}
+{"no": "H-C2", "case": "HYD_热催化加氢", "dimension": "对象与条件", "tier_tag": "T3·待核·内容题", "question": "Fe-in-CNTs 相比 Fe-out-CNT 与 Fe/AC，其 C5+ 收率提升的量化关系如何？"}
+{"no": "H-C3", "case": "HYD_热催化加氢", "dimension": "对象与条件", "tier_tag": "T3·located_review_text·判断题", "question": "原文证据能否支持\"FeMn@Si 核壳催化剂是对甲基改性 Fe₂O₃@SiO₂ 的**直接**改进/扩展\"这一成对关系？能支持到什么程度，哪些需保留为候选？"}
+{"no": "H-C4", "case": "HYD_热催化加氢", "dimension": "对象与条件", "tier_tag": "T3·待核·内容题", "question": "Co/SiO₂@H-ZSM-5 胶囊催化剂的核径变化对产物分布有何影响？"}
+{"no": "H-D1", "case": "HYD_热催化加氢", "dimension": "范围与边界", "tier_tag": "T3·待核·边界题", "question": "该加氢谱系中大量\"路线归类\"（route_association）连接能否当作事实上的演化/继承关系引用？"}
+{"no": "H-D2", "case": "HYD_热催化加氢", "dimension": "范围与边界", "tier_tag": "T3·待核·边界题", "question": "本加氢谱系的证据是否经过独立核验？来源集中度如何？"}
+{"no": "H-D3", "case": "HYD_热催化加氢", "dimension": "范围与边界", "tier_tag": "T3·待核·边界题", "question": "`edge_scope=figure_only` 且 `count_in_dataset=false` 的连接，在统计关系数量时是否计入？"}
+{"no": "H-D4", "case": "HYD_热催化加氢", "dimension": "范围与边界", "tier_tag": "陷阱·待核", "question": "谱系是否记录\"物理混合双功能催化剂被核壳限域催化剂直接取代（REPLACES）\"的关系？"}
+{"no": "R-A1", "case": "AORFB_水系有机液流", "dimension": "关系性质", "tier_tag": "T1·治理注入", "question": "Narayanan 课题组 DHDMBS 体系与其早期 BQDS 体系之间，记录为哪一类关系？"}
+{"no": "R-A2", "case": "AORFB_水系有机液流", "dimension": "关系性质", "tier_tag": "T1·治理注入", "question": "Aziz 等碱性蒽醌 AORFB（2,6-DHAQ）与其更早的无金属 RFB 体系之间记录为哪一类关系？"}
+{"no": "R-A3", "case": "AORFB_水系有机液流", "dimension": "关系性质", "tier_tag": "T3·待核·内容题", "question": "2,6-DHAQ 碱性 AORFB 与 2,6-DBEAQ 碱性 AORFB 之间，谱系记录为哪一类关系？"}
+{"no": "R-A4", "case": "AORFB_水系有机液流", "dimension": "关系性质", "tier_tag": "T3·待核·内容题", "question": "DHPS（phenazine）与 BHPC 之间记录为哪一类关系？"}
+{"no": "R-B1", "case": "AORFB_水系有机液流", "dimension": "关系方向", "tier_tag": "T1·治理注入", "question": "Aziz 蒽醌体系这条改进关系，方向从哪个体系指向哪个体系？"}
+{"no": "R-B2", "case": "AORFB_水系有机液流", "dimension": "关系方向", "tier_tag": "T1·治理注入", "question": "DHDMBS 取代 BQDS 这条关系，哪个是新体系、哪个是被取代体系？"}
+{"no": "R-B3", "case": "AORFB_水系有机液流", "dimension": "关系方向", "tier_tag": "T3·待核·内容题", "question": "MV//4-HO-TEMPO 与季铵化双电子紫精之间的改进关系方向如何？"}
+{"no": "R-B4", "case": "AORFB_水系有机液流", "dimension": "关系方向", "tier_tag": "T3·待核·内容题", "question": "2,6-DBEAQ 与 2,6-DPPEAQ 之间记录为 EXTENDS，时间先后与方向如何？"}
+{"no": "R-C1", "case": "AORFB_水系有机液流", "dimension": "对象与条件", "tier_tag": "T1·治理注入·对象校正", "question": "Aziz 蒽醌体系这条改进关系的\"改进方\"具体是哪个体系？（注意 2,6-DHAQ 碱性蒽醌与 2,6-DBEAQ 的区分）"}
+{"no": "R-C2", "case": "AORFB_水系有机液流", "dimension": "对象与条件", "tier_tag": "T3·待核·陷阱", "question": "扩散-渗出圈法借鉴关系（跨案例对照）的借鉴者是 Zhou 还是 Zhang？—在 AORFB 语境外不要混入。此处仅问：谱系中\"2,6-DBEAQ\"的容量衰减表现如何？"}
+{"no": "R-C3", "case": "AORFB_水系有机液流", "dimension": "对象与条件", "tier_tag": "T3·待核·内容题", "question": "2,6-DPPEAQ 近中性 AORFB 报道的每次循环容量衰减率是多少？"}
+{"no": "R-C4", "case": "AORFB_水系有机液流", "dimension": "对象与条件", "tier_tag": "T3·located_review_text·内容题", "question": "MV//4-HO-TEMPO 全有机 AORFB 报道的电池电压与电流密度范围各是多少？"}
+{"no": "R-C5", "case": "AORFB_水系有机液流", "dimension": "对象与条件", "tier_tag": "T3·待核·内容题", "question": "AQDS-(NH₄)₂ 通过什么策略提高溶解度？pH 中性下水中溶解度达多少？"}
+{"no": "R-C6", "case": "AORFB_水系有机液流", "dimension": "对象与条件", "tier_tag": "T3·待核·内容题", "question": "BTMAP-Fc 二茂铁分子通过何种结构修饰抑制双分子猝灭？容量保持率多少？"}
+{"no": "R-D1", "case": "AORFB_水系有机液流", "dimension": "范围与边界", "tier_tag": "T1·治理注入·范围", "question": "本次人工校正谱系查询范围覆盖哪些案例？其中哪条关系有正式 confirmed 文件记录？"}
+{"no": "R-D2", "case": "AORFB_水系有机液流", "dimension": "范围与边界", "tier_tag": "T3·待核·边界", "question": "AORFB 谱系中的\"路线归类\"连接（25 条）能否当作直接演化关系计入？"}
+{"no": "R-D3", "case": "AORFB_水系有机液流", "dimension": "范围与边界", "tier_tag": "T3·待核·边界", "question": "AORFB 谱系是否经过被引原文独立核验？单源偏置如何？"}
+{"no": "R-D4", "case": "AORFB_水系有机液流", "dimension": "范围与边界", "tier_tag": "陷阱·待核", "question": "谱系是否记录\"全钒无机水系 RFB 被某有机体系直接取代（REPLACES）\"的直接演化关系？"}
+{"no": "E1", "case": "对照", "dimension": "对照", "tier_tag": "对照", "question": "全钒液流电池的能量效率、电压效率典型范围是多少？（原 50 题题1）"}
+{"no": "E2", "case": "对照", "dimension": "对照", "tier_tag": "对照", "question": "抑制铁铬液流电池负极析氢的主要策略有哪些？"}
+{"no": "E3", "case": "对照", "dimension": "对照", "tier_tag": "对照", "question": "膨胀石墨复合相变材料提高导热的常见做法有哪些？"}
+{"no": "E4", "case": "对照", "dimension": "对照", "tier_tag": "对照", "question": "水系有机液流电池相对全钒体系在成本/可设计性上的一般优势是什么？（泛问，不涉具体谱系边）"}

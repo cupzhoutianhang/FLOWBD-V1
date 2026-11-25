@@ -1,0 +1,155 @@
+{
+  "version": 1,
+  "width": 1320,
+  "height": 850,
+  "columns": [
+    {
+      "label": "2004",
+      "x": 180
+    },
+    {
+      "label": "2013–2014",
+      "x": 490
+    },
+    {
+      "label": "2020",
+      "x": 800
+    },
+    {
+      "label": "2021",
+      "x": 1110
+    }
+  ],
+  "groups": [
+    {
+      "id": "diffusion",
+      "label": "渗透 / 扩散评价法",
+      "y": 60,
+      "height": 124
+    },
+    {
+      "id": "observation",
+      "label": "观察法",
+      "y": 204,
+      "height": 124
+    },
+    {
+      "id": "weighing",
+      "label": "称重法",
+      "y": 348,
+      "height": 212
+    },
+    {
+      "id": "integrated",
+      "label": "综合判定法",
+      "y": 580,
+      "height": 124
+    }
+  ],
+  "nodes": {
+    "P01": {
+      "group": "diffusion",
+      "x": 180,
+      "y": 132,
+      "title": "扩散-渗出圈法",
+      "subtitle": "2004 · 孙建忠等"
+    },
+    "P05": {
+      "group": "diffusion",
+      "x": 800,
+      "y": 132,
+      "title": "借鉴扩散-渗出圈法",
+      "subtitle": "2020 · Zhou 等 / MA–EG"
+    },
+    "P02": {
+      "group": "observation",
+      "x": 490,
+      "y": 276,
+      "title": "试纸观察法",
+      "subtitle": "2013 · Zhang 等"
+    },
+    "P06": {
+      "group": "observation",
+      "x": 1110,
+      "y": 276,
+      "title": "目测逼近法",
+      "subtitle": "2021 · 本文提出"
+    },
+    "P03": {
+      "group": "weighing",
+      "x": 490,
+      "y": 414,
+      "title": "称量失重法",
+      "subtitle": "2014 · 曹晓玲等"
+    },
+    "P04": {
+      "group": "weighing",
+      "x": 490,
+      "y": 510,
+      "title": "沿用称量法",
+      "subtitle": "2014 · Yang 等"
+    },
+    "P07": {
+      "group": "weighing",
+      "x": 1110,
+      "y": 460,
+      "title": "称重测量法",
+      "subtitle": "2021 · 本文提出"
+    },
+    "P08": {
+      "group": "integrated",
+      "x": 1110,
+      "y": 652,
+      "title": "渗透直径百分比判定法",
+      "subtitle": "2021 · 本文提出"
+    }
+  },
+  "edges": {
+    "PCM_E01": {
+      "label": "借鉴 · ADAPTS",
+      "labelAt": [
+        490,
+        118
+      ]
+    }
+  },
+  "chapters": [
+    {
+      "id": "diffusion",
+      "label": "渗透 / 扩散",
+      "focus": [
+        "P01",
+        "P05"
+      ],
+      "note": "唯一已记录的直接演化：Zhou 等借鉴扩散-渗出圈法；证据位于主论文引言转引。"
+    },
+    {
+      "id": "observation",
+      "label": "观察评价",
+      "focus": [
+        "P02",
+        "P06"
+      ],
+      "note": "同属观察评价分支，当前数据没有记录两者的直接演化关系。"
+    },
+    {
+      "id": "weighing",
+      "label": "称重评价",
+      "focus": [
+        "P03",
+        "P04",
+        "P07"
+      ],
+      "note": "并列展示称重评价方法；不根据时间先后补造继承关系。"
+    },
+    {
+      "id": "integrated",
+      "label": "综合判定",
+      "focus": [
+        "P08"
+      ],
+      "note": "本文提出渗透直径百分比判定法；本文三种方法可在语料内一次论文中核验。"
+    }
+  ],
+  "evidence_caption": "主论文引言转引前人方法及唯一演化关系；本文三种方法可在语料内一次论文中核验。被引原文未独立核验。"
+}

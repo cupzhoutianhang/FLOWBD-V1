@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" width="1343pt" height="421pt" viewBox="0.00 0.00 1343.00 421.00">
+<ns0:g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(7.2 413.93)">
+<ns0:title>aorfb_lineage</ns0:title>
+<ns0:polygon fill="white" stroke="none" points="-7.2,7.2 -7.2,-413.93 1335.32,-413.93 1335.32,7.2 -7.2,7.2" />
+<ns0:polygon fill="#e5e7eb" stroke="none" points="390.43,-14 390.43,-34.25 474.43,-34.25 474.43,-14 390.43,-14" />
+<ns0:text xml:space="preserve" text-anchor="start" x="393.43" y="-21.75" font-family="Microsoft YaHei" font-size="10.00" fill="#374151">　无机金属基线　</ns0:text>
+<ns0:polygon fill="#dbeafe" stroke="none" points="484.43,-14 484.43,-34.25 591.68,-34.25 591.68,-14 484.43,-14" />
+<ns0:text xml:space="preserve" text-anchor="start" x="487.43" y="-21.75" font-family="Microsoft YaHei" font-size="10.00" fill="#1e3a8a">　路线A·醌/蒽醌负极　</ns0:text>
+<ns0:polygon fill="#dcfce7" stroke="none" points="601.68,-14 601.68,-34.25 693.93,-34.25 693.93,-14 601.68,-14" />
+<ns0:text xml:space="preserve" text-anchor="start" x="604.68" y="-21.75" font-family="Microsoft YaHei" font-size="10.00" fill="#14532d">　路线B·紫精负极　</ns0:text>
+<ns0:text xml:space="preserve" text-anchor="start" x="706.93" y="-21.75" font-family="Microsoft YaHei" font-size="10.00" fill="#111827">　━━━ 直接演化</ns0:text>
+<ns0:text xml:space="preserve" text-anchor="start" x="792.68" y="-21.75" font-family="Microsoft YaHei" font-size="10.00" fill="#c65a00">━·━·━ 基线比较</ns0:text>
+<ns0:text xml:space="preserve" text-anchor="start" x="873.18" y="-21.75" font-family="Microsoft YaHei" font-size="10.00" fill="#71839b">- - - 路线归类</ns0:text>
+
+<ns0:g id="node1" class="node">
+<ns0:title>N00</ns0:title>
+<ns0:path fill="#e5e7eb" stroke="#6b7280" stroke-width="1.4" d="M83.16,-291.71C83.16,-291.71 12,-291.71 12,-291.71 6,-291.71 0,-285.71 0,-279.71 0,-279.71 0,-245.75 0,-245.75 0,-239.75 6,-233.75 12,-233.75 12,-233.75 83.16,-233.75 83.16,-233.75 89.16,-233.75 95.16,-239.75 95.16,-245.75 95.16,-245.75 95.16,-279.71 95.16,-279.71 95.16,-285.71 89.16,-291.71 83.16,-291.71" />
+<ns0:text xml:space="preserve" text-anchor="start" x="10.08" y="-274.78" font-family="Microsoft YaHei" font-size="11.00" fill="#111827">金属基(全钒等)</ns0:text>
+<ns0:text xml:space="preserve" text-anchor="start" x="14.95" y="-259.78" font-family="Microsoft YaHei" font-size="11.00" fill="#111827">无机水系RFB</ns0:text>
+<ns0:text xml:space="preserve" text-anchor="start" x="32.58" y="-244.78" font-family="Microsoft YaHei" font-size="11.00" fill="#111827">(基线)</ns0:text>
+</ns0:g>
+
+<ns0:g id="node2" class="node">
+<ns0:title>A03</ns0:title>
+<ns0:path fill="#dbeafe" stroke="#2563eb" stroke-width="1.4" d="M269.32,-289.71C269.32,-289.71 189.16,-289.71 189.16,-289.71 183.16,-289.71 177.16,-283.71 177.16,-277.71 177.16,-277.71 177.16,-255.75 177.16,-255.75 177.16,-249.75 183.16,-243.75 189.16,-243.75 189.16,-243.75 269.32,-243.75 269.32,-243.75 275.32,-243.75 281.32,-249.75 281.32,-255.75 281.32,-255.75 281.32,-277.71 281.32,-277.71 281.32,-283.71 275.32,-289.71 269.32,-289.71" />
+<ns0:text xml:space="preserve" text-anchor="start" x="187.24" y="-273.78" font-family="Microsoft YaHei" font-size="11.00" fill="#111827">9,10-AQDS//Br</ns0:text>
+<ns0:text xml:space="preserve" text-anchor="start" x="265.99" y="-273.78" font-family="Microsoft YaHei" baseline-shift="sub" font-size="11.00" fill="#111827">2</ns0:text>
+<ns0:text xml:space="preserve" text-anchor="start" x="190.99" y="-262.78" font-family="Microsoft YaHei" font-size="11.00" fill="#111827">无金属酸性RFB</ns0:text>
+<ns0:text xml:space="preserve" text-anchor="start" x="203.74" y="-251.78" font-family="Microsoft YaHei" font-size="11.00" fill="#111827">OCV 0.7V</ns0:text>
+</ns0:g>
+
+<ns0:g id="edge6" class="edge rel-basecmp">
+<ns0:title>N00-&gt;A03</ns0:title>
+<ns0:path fill="none" stroke="#c65a00" stroke-width="1.5" stroke-dasharray="8,3,1.5,3" d="M95.78,-263.78C117.43,-264.26 143.37,-264.84 166.54,-265.36" />
+<ns0:polygon fill="#c65a00" stroke="#c65a00" stroke-width="1.5" points="166.29,-268.15 174.35,-265.53 166.41,-262.55 166.29,-268.15" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="136.16" y="-269.17" font-family="Microsoft YaHei" font-size="9.00">基线比较</ns0:text>
+</ns0:g>
+
+<ns0:g id="node6" class="node">
+<ns0:title>B01</ns0:title>
+<ns0:path fill="#dcfce7" stroke="#16a34a" stroke-width="1.4" d="M664.39,-212.71C664.39,-212.71 569.98,-212.71 569.98,-212.71 563.98,-212.71 557.98,-206.71 557.98,-200.71 557.98,-200.71 557.98,-166.75 557.98,-166.75 557.98,-160.75 563.98,-154.75 569.98,-154.75 569.98,-154.75 664.39,-154.75 664.39,-154.75 670.39,-154.75 676.39,-160.75 676.39,-166.75 676.39,-166.75 676.39,-200.71 676.39,-200.71 676.39,-206.71 670.39,-212.71 664.39,-212.71" />
+<ns0:text xml:space="preserve" text-anchor="start" x="568.06" y="-195.78" font-family="Microsoft YaHei" font-size="11.00" fill="#111827">MV//4-HO-TEMPO</ns0:text>
+<ns0:text xml:space="preserve" text-anchor="start" x="581.93" y="-180.78" font-family="Microsoft YaHei" font-size="11.00" fill="#111827">全有机AORFB</ns0:text>
+<ns0:text xml:space="preserve" text-anchor="start" x="600.31" y="-165.78" font-family="Microsoft YaHei" font-size="11.00" fill="#111827">单电子</ns0:text>
+</ns0:g>
+
+<ns0:g id="edge7" class="edge rel-basecmp">
+<ns0:title>N00-&gt;B01</ns0:title>
+<ns0:path fill="none" stroke="#c65a00" stroke-width="1.5" stroke-dasharray="8,3,1.5,3" d="M95.83,-246.87C119.97,-239.15 149.92,-230.18 177.16,-223.73 263.79,-203.21 285.97,-198.43 374.57,-189.73 445.1,-182.81 463.13,-187.48 533.98,-185.73 538.35,-185.62 542.86,-185.51 547.4,-185.4" />
+<ns0:polygon fill="#c65a00" stroke="#c65a00" stroke-width="1.5" points="547.16,-188.21 555.09,-185.21 547.02,-182.61 547.16,-188.21" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="327.94" y="-201.8" font-family="Microsoft YaHei" font-size="9.00">基线比较</ns0:text>
+</ns0:g>
+
+<ns0:g id="node3" class="node">
+<ns0:title>A04</ns0:title>
+<ns0:path fill="#dbeafe" stroke="#2563eb" stroke-width="1.4" d="M498.98,-291.71C498.98,-291.71 386.57,-291.71 386.57,-291.71 380.57,-291.71 374.57,-285.71 374.57,-279.71 374.57,-279.71 374.57,-257.75 374.57,-257.75 374.57,-251.75 380.57,-245.75 386.57,-245.75 386.57,-245.75 498.98,-245.75 498.98,-245.75 504.98,-245.75 510.98,-251.75 510.98,-257.75 510.98,-257.75 510.98,-279.71 510.98,-279.71 510.98,-285.71 504.98,-291.71 498.98,-291.71" />
+<ns0:text xml:space="preserve" text-anchor="start" x="384.65" y="-275.78" font-family="Microsoft YaHei" font-size="11.00" fill="#111827">2,6-DHAQ//K</ns0:text>
+<ns0:text xml:space="preserve" text-anchor="start" x="454.4" y="-275.78" font-family="Microsoft YaHei" baseline-shift="sub" font-size="11.00" fill="#111827">4</ns0:text>
+<ns0:text xml:space="preserve" text-anchor="start" x="459.65" y="-275.78" font-family="Microsoft YaHei" font-size="11.00" fill="#111827">Fe(CN)</ns0:text>
+<ns0:text xml:space="preserve" text-anchor="start" x="495.65" y="-275.78" font-family="Microsoft YaHei" baseline-shift="sub" font-size="11.00" fill="#111827">6</ns0:text>
+<ns0:text xml:space="preserve" text-anchor="start" x="413.15" y="-264.78" font-family="Microsoft YaHei" font-size="11.00" fill="#111827">碱性AORFB</ns0:text>
+<ns0:text xml:space="preserve" text-anchor="start" x="413.9" y="-253.78" font-family="Microsoft YaHei" font-size="11.00" fill="#111827">OCV 1.20V</ns0:text>
+</ns0:g>
+
+<ns0:g id="edge1" class="edge">
+<ns0:title>A03-&gt;A04</ns0:title>
+<ns0:path fill="none" stroke="#111827" stroke-width="1.8" d="M281.99,-267.22C306.5,-267.45 336.3,-267.73 363.5,-267.99" />
+<ns0:polygon fill="#111827" stroke="#111827" stroke-width="1.8" points="363.42,-270.79 371.45,-268.07 363.48,-265.19 363.42,-270.79" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="327.94" y="-272.05" font-family="Microsoft YaHei" font-size="9.00">IMPROVES</ns0:text>
+</ns0:g>
+
+
+<ns0:g id="node4" class="node">
+<ns0:title>A06</ns0:title>
+<ns0:path fill="#dbeafe" stroke="#2563eb" stroke-width="1.4" d="M1081.21,-290.73C1081.21,-290.73 964.3,-290.73 964.3,-290.73 958.3,-290.73 952.3,-284.73 952.3,-278.73 952.3,-278.73 952.3,-266.73 952.3,-266.73 952.3,-260.73 958.3,-254.73 964.3,-254.73 964.3,-254.73 1081.21,-254.73 1081.21,-254.73 1087.21,-254.73 1093.21,-260.73 1093.21,-266.73 1093.21,-266.73 1093.21,-278.73 1093.21,-278.73 1093.21,-284.73 1087.21,-290.73 1081.21,-290.73" />
+<ns0:text xml:space="preserve" text-anchor="start" x="962.38" y="-274.28" font-family="Microsoft YaHei" font-size="11.00" fill="#111827">2,6-DBEAQ//K</ns0:text>
+<ns0:text xml:space="preserve" text-anchor="start" x="1036.63" y="-274.28" font-family="Microsoft YaHei" baseline-shift="sub" font-size="11.00" fill="#111827">4</ns0:text>
+<ns0:text xml:space="preserve" text-anchor="start" x="1041.88" y="-274.28" font-family="Microsoft YaHei" font-size="11.00" fill="#111827">Fe(CN)</ns0:text>
+<ns0:text xml:space="preserve" text-anchor="start" x="1077.88" y="-274.28" font-family="Microsoft YaHei" baseline-shift="sub" font-size="11.00" fill="#111827">6</ns0:text>
+<ns0:text xml:space="preserve" text-anchor="start" x="987.5" y="-263.28" font-family="Microsoft YaHei" font-size="11.00" fill="#111827">碱性·羧酸端基</ns0:text>
+</ns0:g>
+
+<ns0:g id="edge2" class="edge">
+<ns0:title>A04-&gt;A06</ns0:title>
+<ns0:path fill="none" stroke="#111827" stroke-width="1.8" d="M511.49,-269.2C618.59,-269.94 826.65,-271.38 941.23,-272.17" />
+<ns0:polygon fill="#111827" stroke="#111827" stroke-width="1.8" points="940.94,-274.97 948.96,-272.23 940.98,-269.37 940.94,-274.97" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="733.14" y="-275.16" font-family="Microsoft YaHei" font-size="9.00">ADAPTS</ns0:text>
+</ns0:g>
+
+<ns0:g id="node5" class="node">
+<ns0:title>A07</ns0:title>
+<ns0:path fill="#dbeafe" stroke="#2563eb" stroke-width="1.4" d="M1316.12,-290.73C1316.12,-290.73 1192.46,-290.73 1192.46,-290.73 1186.46,-290.73 1180.46,-284.73 1180.46,-278.73 1180.46,-278.73 1180.46,-266.73 1180.46,-266.73 1180.46,-260.73 1186.46,-254.73 1192.46,-254.73 1192.46,-254.73 1316.12,-254.73 1316.12,-254.73 1322.12,-254.73 1328.12,-260.73 1328.12,-266.73 1328.12,-266.73 1328.12,-278.73 1328.12,-278.73 1328.12,-284.73 1322.12,-290.73 1316.12,-290.73" />
+<ns0:text xml:space="preserve" text-anchor="start" x="1190.54" y="-274.28" font-family="Microsoft YaHei" font-size="11.00" fill="#111827">2,6-DPPEAQ//K</ns0:text>
+<ns0:text xml:space="preserve" text-anchor="start" x="1271.54" y="-274.28" font-family="Microsoft YaHei" baseline-shift="sub" font-size="11.00" fill="#111827">4</ns0:text>
+<ns0:text xml:space="preserve" text-anchor="start" x="1276.79" y="-274.28" font-family="Microsoft YaHei" font-size="11.00" fill="#111827">Fe(CN)</ns0:text>
+<ns0:text xml:space="preserve" text-anchor="start" x="1312.79" y="-274.28" font-family="Microsoft YaHei" baseline-shift="sub" font-size="11.00" fill="#111827">6</ns0:text>
+<ns0:text xml:space="preserve" text-anchor="start" x="1219.04" y="-263.28" font-family="Microsoft YaHei" font-size="11.00" fill="#111827">近中性·磷酸基</ns0:text>
+</ns0:g>
+
+<ns0:g id="edge3" class="edge">
+<ns0:title>A06-&gt;A07</ns0:title>
+<ns0:path fill="none" stroke="#111827" stroke-width="1.8" d="M1093.87,-272.73C1117.75,-272.73 1144.68,-272.73 1169.53,-272.73" />
+<ns0:polygon fill="#111827" stroke="#111827" stroke-width="1.8" points="1169.3,-275.53 1177.3,-272.73 1169.3,-269.93 1169.3,-275.53" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="1136.83" y="-276.93" font-family="Microsoft YaHei" font-size="9.00">EXTENDS</ns0:text>
+</ns0:g>
+
+<ns0:g id="node7" class="node">
+<ns0:title>B02</ns0:title>
+<ns0:path fill="#dcfce7" stroke="#16a34a" stroke-width="1.4" d="M890.67,-213.21C890.67,-213.21 804.51,-213.21 804.51,-213.21 798.51,-213.21 792.51,-207.21 792.51,-201.21 792.51,-201.21 792.51,-182.25 792.51,-182.25 792.51,-176.25 798.51,-170.25 804.51,-170.25 804.51,-170.25 890.67,-170.25 890.67,-170.25 896.67,-170.25 902.67,-176.25 902.67,-182.25 902.67,-182.25 902.67,-201.21 902.67,-201.21 902.67,-207.21 896.67,-213.21 890.67,-213.21" />
+<ns0:text xml:space="preserve" text-anchor="start" x="802.59" y="-196.28" font-family="Microsoft YaHei" font-size="11.00" fill="#111827">季铵化双电子紫精</ns0:text>
+<ns0:text xml:space="preserve" text-anchor="start" x="810.84" y="-181.28" font-family="Microsoft YaHei" font-size="11.00" fill="#111827">AORFB·双电子</ns0:text>
+</ns0:g>
+
+<ns0:g id="edge4" class="edge">
+<ns0:title>B01-&gt;B02</ns0:title>
+<ns0:path fill="none" stroke="#111827" stroke-width="1.8" d="M677.01,-185.79C708.97,-186.91 748.57,-188.3 781.47,-189.45" />
+<ns0:polygon fill="#111827" stroke="#111827" stroke-width="1.8" points="781.08,-192.24 789.17,-189.72 781.27,-186.64 781.08,-192.24" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="733.14" y="-193.11" font-family="Microsoft YaHei" font-size="9.00">IMPROVES</ns0:text>
+</ns0:g>
+
+<ns0:g id="node8" class="node">
+<ns0:title>B05</ns0:title>
+<ns0:path fill="#dcfce7" stroke="#16a34a" stroke-width="1.4" d="M893.3,-91.21C893.3,-91.21 801.89,-91.21 801.89,-91.21 795.89,-91.21 789.89,-85.21 789.89,-79.21 789.89,-79.21 789.89,-60.25 789.89,-60.25 789.89,-54.25 795.89,-48.25 801.89,-48.25 801.89,-48.25 893.3,-48.25 893.3,-48.25 899.3,-48.25 905.3,-54.25 905.3,-60.25 905.3,-60.25 905.3,-79.21 905.3,-79.21 905.3,-85.21 899.3,-91.21 893.3,-91.21" />
+<ns0:text xml:space="preserve" text-anchor="start" x="799.97" y="-74.28" font-family="Microsoft YaHei" font-size="11.00" fill="#111827">BTMAP-Vi//二茂铁</ns0:text>
+<ns0:text xml:space="preserve" text-anchor="start" x="812.34" y="-59.28" font-family="Microsoft YaHei" font-size="11.00" fill="#111827">高稳定AORFB</ns0:text>
+</ns0:g>
+
+<ns0:g id="edge8" class="edge rel-route">
+<ns0:title>B02-&gt;B05</ns0:title>
+<ns0:path fill="none" stroke="#71839b" stroke-width="1.3" stroke-dasharray="5,2" d="M847.59,-169.8C847.59,-150.85 847.59,-123.21 847.59,-101.78" />
+<ns0:polygon fill="#71839b" stroke="#71839b" stroke-width="1.3" points="850.4,-101.79 847.6,-93.79 844.8,-101.79 850.4,-101.79" />
+<ns0:text xml:space="preserve" text-anchor="middle" x="838.22" y="-128.56" font-family="Microsoft YaHei" font-size="9.00">路线归类</ns0:text>
+</ns0:g>
+
+<ns0:g id="node9" class="node">
+<ns0:title>ybase</ns0:title>
+<ns0:text xml:space="preserve" text-anchor="middle" x="47.58" y="-386.36" font-family="Microsoft YaHei" font-size="10.00" fill="#6b7280">基线</ns0:text>
+</ns0:g>
+
+
+<ns0:g id="node10" class="node">
+<ns0:title>y2014</ns0:title>
+<ns0:text xml:space="preserve" text-anchor="middle" x="229.24" y="-386.36" font-family="Microsoft YaHei" font-size="10.00" fill="#6b7280">2014</ns0:text>
+</ns0:g>
+
+<ns0:g id="edge9" class="edge axis">
+<ns0:title>ybase-&gt;y2014</ns0:title>
+<ns0:path fill="none" stroke="#9ca3af" d="M74.32,-388.73C108.38,-388.73 168.08,-388.73 202.26,-388.73" />
+</ns0:g>
+
+
+<ns0:g id="node11" class="node">
+<ns0:title>y2015</ns0:title>
+<ns0:text xml:space="preserve" text-anchor="middle" x="442.77" y="-386.36" font-family="Microsoft YaHei" font-size="10.00" fill="#6b7280">2015</ns0:text>
+</ns0:g>
+
+<ns0:g id="edge10" class="edge axis">
+<ns0:title>y2014-&gt;y2015</ns0:title>
+<ns0:path fill="none" stroke="#9ca3af" d="M256.18,-388.73C296.89,-388.73 375.32,-388.73 415.96,-388.73" />
+</ns0:g>
+
+
+<ns0:g id="node12" class="node">
+<ns0:title>y2016</ns0:title>
+<ns0:text xml:space="preserve" text-anchor="middle" x="617.18" y="-386.36" font-family="Microsoft YaHei" font-size="10.00" fill="#6b7280">2016</ns0:text>
+</ns0:g>
+
+<ns0:g id="edge11" class="edge axis">
+<ns0:title>y2015-&gt;y2016</ns0:title>
+<ns0:path fill="none" stroke="#9ca3af" d="M469.59,-388.73C502.09,-388.73 557.61,-388.73 590.2,-388.73" />
+</ns0:g>
+
+
+<ns0:g id="node13" class="node">
+<ns0:title>y2017</ns0:title>
+<ns0:text xml:space="preserve" text-anchor="middle" x="847.59" y="-386.36" font-family="Microsoft YaHei" font-size="10.00" fill="#6b7280">2017</ns0:text>
+</ns0:g>
+
+<ns0:g id="edge12" class="edge axis">
+<ns0:title>y2016-&gt;y2017</ns0:title>
+<ns0:path fill="none" stroke="#9ca3af" d="M643.94,-388.73C687.93,-388.73 777.01,-388.73 820.93,-388.73" />
+</ns0:g>
+
+
+<ns0:g id="node14" class="node">
+<ns0:title>y2018</ns0:title>
+<ns0:text xml:space="preserve" text-anchor="middle" x="1022.75" y="-386.36" font-family="Microsoft YaHei" font-size="10.00" fill="#6b7280">2018</ns0:text>
+</ns0:g>
+
+<ns0:g id="edge13" class="edge axis">
+<ns0:title>y2017-&gt;y2018</ns0:title>
+<ns0:path fill="none" stroke="#9ca3af" d="M874.52,-388.73C907.26,-388.73 963.25,-388.73 995.94,-388.73" />
+</ns0:g>
+
+
+<ns0:g id="node15" class="node">
+<ns0:title>y2019</ns0:title>
+<ns0:text xml:space="preserve" text-anchor="middle" x="1254.29" y="-386.36" font-family="Microsoft YaHei" font-size="10.00" fill="#6b7280">2019</ns0:text>
+</ns0:g>
+
+<ns0:g id="edge14" class="edge axis">
+<ns0:title>y2018-&gt;y2019</ns0:title>
+<ns0:path fill="none" stroke="#9ca3af" d="M1049.64,-388.73C1093.84,-388.73 1183.36,-388.73 1227.5,-388.73" />
+</ns0:g>
+
+</ns0:g>
+</ns0:svg>

@@ -1,0 +1,27 @@
+# Research environment starting point; optional modules may require extra setup.
+-r requirements-demo.txt
+streamlit-agraph==0.0.45
+requests
+openai
+neo4j
+pymilvus
+torch
+transformers
+scipy
+scikit-learn
+umap-learn
+hdbscan
+tqdm
+PyYAML
+rdkit
+# deepchem is optional for molecular analysis; install separately if needed.
+
+# Additional runtime imports in the paired backend; validate in an isolated environment.
+langchain==0.2.16
+langchain-community==0.2.16
+langchain-core==0.2.38
+langchain-text-splitters==0.2.4
+langdetect
+rdflib
+python-dotenv
+zhipuai

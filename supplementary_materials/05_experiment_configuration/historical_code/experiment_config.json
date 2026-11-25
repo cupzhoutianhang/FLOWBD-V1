@@ -1,0 +1,53 @@
+{
+  "实验名": "FlowBD 治理前后两组对照实验",
+  "批次": "governance_comparison_20261106",
+  "生成时间": "2026-11-06 11:09:24",
+  "代码版本": {
+    "运行基线": "D:/个人工作/邀稿/FlowBD系统 (已确认可运行的旧 part5 主流程)",
+    "入口": "src/KnowledgeGraph-Streamlit-main/app.py 引导段 -> MultiTurnConversation",
+    "说明": "未用 C 盘交接新版 part5 覆盖 D; 仅附加式引入 governance 读取模块 corpus_evidence.py / lineage_answer.py 与人工校正数据"
+  },
+  "两组定义": {
+    "baseline": "不注入人工校正谱系记录/范围说明, 不走记录直出",
+    "governed": "同一基础上注入 corpus_evidence.lineage_sources(question) (5 条人工校正案例边 + 1 条 ADAPTS confirmed + 范围说明), 保留关系状态/方向/证据/适用范围; 同一生成路径, 不走 lineage_answer 直出"
+  },
+  "相同项(两组一致)": [
+    "模型",
+    "参数",
+    "基础检索设置(CHUneng/BGE-M3/reranker)",
+    "通用引用检查",
+    "数值检查",
+    "修复轮次"
+  ],
+  "语料版本": {
+    "milvus_collection": "CHUneng",
+    "entities": 52014,
+    "docs": 342
+  },
+  "治理数据来源(人工校正, 只读)": [
+    "paper/method_evolution_v2/article_minimal_results/final_case/final_storage_case_edges.csv (5 条人工校正案例边)",
+    "paper/method_evolution_v2/article_minimal_results/lineage_mvp/lineage_edges_confirmed_v2.csv (1 条 ADAPTS confirmed/accepted)",
+    "paper/method_evolution_v2/stage_a_full_v1/per_paper/<4 篇>/sentence_index.json (原句证据)"
+  ],
+  "题集": "questions.jsonl (冻结自 eval_run/questions_src_50.csv; 仅题号/题型/题目, 不含历史分数)",
+  "评分": {
+    "维度": [
+      "正确性",
+      "完整性",
+      "引用支撑",
+      "对象与条件匹配"
+    ],
+    "量程": "0-5",
+    "方式": "盲审随机顺序隐藏组别; AI 仅辅助初评; 最终人评分由用户确认"
+  },
+  "凭据": "不含; 作答调用使用 conv 内既有配置",
+  "安全边界": [
+    "不重建数据库",
+    "不重做前端",
+    "不改论文",
+    "不覆盖 D 盘 part5",
+    "不把 accepted 升级为 confirmed/S2",
+    "不自称 C1",
+    "不编造关系"
+  ]
+}

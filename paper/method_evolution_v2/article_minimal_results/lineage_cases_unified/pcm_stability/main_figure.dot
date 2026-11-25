@@ -1,0 +1,69 @@
+// 复合相变材料稳定性评价方法谱系 — 统一主图(8节点·四分支时间轴)
+// 统一样式：rankdir=LR / 白底 / 圆角矩形 / 底部图例 / 旧→新
+// 数据来源：lineage_cases_unified/pcm_stability/{nodes.csv,edges.csv}
+// 仅 1 条已确认关系(P01→P05, ADAPTS, direct_evolution, 实线)；不臆造基线/路线边
+digraph pcm_lineage {
+  graph [rankdir=LR, splines=spline, newrank=true, bgcolor="white",
+         fontname="Microsoft YaHei", fontsize=12, pad=0.10, margin=0,
+         ranksep=2.05, nodesep=0.40, ratio=compress,
+         labelloc=b, labeljust=c,
+         label=<
+<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="10" CELLPADDING="3">
+ <TR>
+  <TD BGCOLOR="#DBEAFE"><FONT POINT-SIZE="10" COLOR="#1E3A8A">　渗透/扩散评价法　</FONT></TD>
+  <TD BGCOLOR="#DCFCE7"><FONT POINT-SIZE="10" COLOR="#14532D">　称重法　</FONT></TD>
+  <TD BGCOLOR="#FFEDD5"><FONT POINT-SIZE="10" COLOR="#7C2D12">　观察法　</FONT></TD>
+  <TD BGCOLOR="#EDE9FE"><FONT POINT-SIZE="10" COLOR="#4C1D95">　综合判定法　</FONT></TD>
+  <TD><FONT POINT-SIZE="10" COLOR="#111827">　━━━ 直接演化(实线)</FONT></TD>
+ </TR>
+</TABLE>>];
+  node  [shape=box, style="rounded,filled", fontname="Microsoft YaHei", fontsize=11,
+         margin="0.14,0.09", penwidth=1.4, fontcolor="#111827"];
+  edge  [fontname="Microsoft YaHei", fontsize=9, arrowsize=0.8];
+
+  // ---- 渗透/扩散评价法(蓝) ----
+  P01 [label=<扩散-渗出圈法 ★<BR/>(数据集内最早)>, fillcolor="#DBEAFE", color="#2563EB"];
+  P05 [label=<Zhou 借鉴<BR/>扩散-渗出圈法>, fillcolor="#DBEAFE", color="#2563EB"];
+
+  // ---- 称重法(绿) ----
+  P03 [label=<曹晓玲<BR/>称量失重法>, fillcolor="#DCFCE7", color="#16A34A"];
+  P04 [label=<Yang<BR/>沿用称量法>, fillcolor="#DCFCE7", color="#16A34A"];
+  P07 [label=<本文<BR/>称重测量法>, fillcolor="#DCFCE7", color="#16A34A"];
+
+  // ---- 观察法(橙) ----
+  P02 [label=<Zhang<BR/>试纸观察法>, fillcolor="#FFEDD5", color="#DD6B20"];
+  P06 [label=<本文<BR/>目测逼近法>, fillcolor="#FFEDD5", color="#DD6B20"];
+
+  // ---- 综合判定法(紫) ----
+  P08 [label=<本文 渗透直径<BR/>百分比判定法>, fillcolor="#EDE9FE", color="#7C3AED"];
+
+  // ==== 直接演化 solid(唯一已确认关系) ====
+  edge [color="#111827", penwidth=1.8, style=solid];
+  P01 -> P05 [label="ADAPTS\n借鉴扩散-渗出圈法"];
+
+  // ---- 年份轴(高权重保持水平) ----
+  { node [shape=plaintext, style="", fontcolor="#6B7280", fontsize=10];
+    y2004 [label="2004"]; y2013 [label="2013"]; y2014 [label="2014"];
+    y2020 [label="2020"]; y2021 [label="2021"];
+    edge [color="#9CA3AF", penwidth=1.0, style=solid, arrowhead=none, class="axis", weight=100];
+    y2004 -> y2013 -> y2014 -> y2020 -> y2021;
+  }
+  // 绑定节点到年份列
+  { rank=same; y2004; P01; }
+  { rank=same; y2013; P02; }
+  { rank=same; y2014; P03; P04; }
+  { rank=same; y2020; P05; }
+  { rank=same; y2021; P07; P06; P08; }
+
+  // 年份轴置顶
+  y2004 -> P01 [style=invis];
+  y2013 -> P02 [style=invis];
+  y2014 -> P03 [style=invis];
+  y2020 -> P05 [style=invis];
+  y2021 -> P07 [style=invis];
+
+  // 列内竖直次序(泳道自上而下：渗透/扩散→称重→观察→综合判定)
+  P03 -> P04 [style=invis];
+  P07 -> P06 [style=invis];
+  P06 -> P08 [style=invis];
+}

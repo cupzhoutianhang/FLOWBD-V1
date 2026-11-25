@@ -1,0 +1,247 @@
+{
+  "version": 1,
+  "width": 1500,
+  "height": 780,
+  "columns": [
+    {
+      "label": "传统基线",
+      "x": 150
+    },
+    {
+      "label": "2005–2007",
+      "x": 390
+    },
+    {
+      "label": "2008",
+      "x": 630
+    },
+    {
+      "label": "2011",
+      "x": 870
+    },
+    {
+      "label": "2018",
+      "x": 1110
+    },
+    {
+      "label": "2021",
+      "x": 1350
+    }
+  ],
+  "groups": [
+    {
+      "id": "confinement",
+      "label": "核壳限域路线",
+      "y": 60,
+      "height": 350,
+      "subgroups": [
+        {
+          "label": "疏水 SiO₂ 壳",
+          "y": 102
+        },
+        {
+          "label": "CNT 限域",
+          "y": 266
+        }
+      ]
+    },
+    {
+      "id": "relay",
+      "label": "分子筛壳 / 接力催化路线",
+      "y": 430,
+      "height": 198
+    }
+  ],
+  "nodes": {
+    "N01": {
+      "group": "confinement",
+      "x": 150,
+      "y": 200,
+      "title": "FT 负载型 / 体相金属",
+      "subtitle": "传统基线 · 非独立年份"
+    },
+    "N29": {
+      "group": "confinement",
+      "x": 1110,
+      "y": 154,
+      "title": "甲基改性 Fe₂O₃@SiO₂",
+      "subtitle": "2018 · 疏水壳"
+    },
+    "N30": {
+      "group": "confinement",
+      "x": 1350,
+      "y": 154,
+      "title": "FeMn@Si",
+      "subtitle": "2021 · 疏水壳 / Science"
+    },
+    "N38": {
+      "group": "confinement",
+      "x": 630,
+      "y": 322,
+      "title": "Fe-in-CNTs",
+      "subtitle": "2008 · 碳管限域"
+    },
+    "N39": {
+      "group": "confinement",
+      "x": 870,
+      "y": 322,
+      "title": "FeN-in-CNTs",
+      "subtitle": "2011 · 节点性能比较"
+    },
+    "N02": {
+      "group": "relay",
+      "x": 150,
+      "y": 520,
+      "title": "物理混合双功能体系",
+      "subtitle": "传统基线 · 非独立年份"
+    },
+    "N55": {
+      "group": "relay",
+      "x": 390,
+      "y": 520,
+      "title": "Co/SiO₂@H-ZSM-5",
+      "subtitle": "2005–2007 · 胶囊催化剂"
+    },
+    "N59": {
+      "group": "relay",
+      "x": 1350,
+      "y": 520,
+      "title": "FeMn@Hollow HZSM-5",
+      "subtitle": "2021 · 蛋黄@壳"
+    }
+  },
+  "edges": {
+    "CO_E001": {
+      "label": "延伸",
+      "labelAt": [
+        1230,
+        140
+      ]
+    },
+    "CO_E003": {
+      "label": "5–7×",
+      "labelAt": [
+        750,
+        308
+      ]
+    },
+    "CO_E017": {
+      "label": "基线比较",
+      "via": [
+        [
+          315,
+          200
+        ],
+        [
+          315,
+          322
+        ]
+      ],
+      "labelAt": [
+        440,
+        308
+      ]
+    },
+    "CO_E025": {
+      "label": "基线比较",
+      "via": [
+        [
+          275,
+          520
+        ],
+        [
+          275,
+          604
+        ],
+        [
+          1232,
+          604
+        ],
+        [
+          1232,
+          520
+        ]
+      ],
+      "labelAt": [
+        830,
+        592
+      ]
+    },
+    "CO_E046": {
+      "label": "同路线归类",
+      "labelAt": [
+        850,
+        505
+      ]
+    },
+    "CO_E051": {
+      "label": "展示连接",
+      "via": [
+        [
+          315,
+          200
+        ],
+        [
+          315,
+          154
+        ]
+      ],
+      "labelAt": [
+        730,
+        140
+      ]
+    },
+    "CO_E052": {
+      "label": "展示",
+      "labelAt": [
+        270,
+        505
+      ]
+    }
+  },
+  "chapters": [
+    {
+      "id": "baseline",
+      "label": "传统基线",
+      "focus": [
+        "N01",
+        "N02"
+      ],
+      "note": "基线是比较参照，不主张其属于某一确定发表年份。两条展示连接不计入语料统计。"
+    },
+    {
+      "id": "hydrophobic",
+      "label": "疏水壳延伸",
+      "focus": [
+        "N29",
+        "N30"
+      ],
+      "note": "已记录一条 EXTENDS 直接演化关系；保留原始证据与核验边界。"
+    },
+    {
+      "id": "cnt",
+      "label": "CNT 性能比较",
+      "focus": [
+        "N38",
+        "N39"
+      ],
+      "note": "FeN-in-CNTs 的活性倍数比较不等同于历史继承，不参与演化路径追踪。"
+    },
+    {
+      "id": "relay",
+      "label": "分子筛壳路线",
+      "focus": [
+        "N02",
+        "N55",
+        "N59"
+      ],
+      "note": "同时展示路线归类与相对基线比较，保持各自线型；不将其升级为直接演化。"
+    }
+  ],
+  "kind_labels": {
+    "external": "传统基线",
+    "frontend": "核壳限域路线",
+    "backend": "分子筛壳 / 接力催化"
+  },
+  "evidence_caption": "综述文本层面可定位；转引一次论文未独立核验。两条展示连接不计入语料统计。"
+}

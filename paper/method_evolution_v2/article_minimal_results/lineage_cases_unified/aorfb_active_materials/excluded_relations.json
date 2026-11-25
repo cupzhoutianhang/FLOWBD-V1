@@ -1,0 +1,17 @@
+[
+  {
+    "edge_id": "AO_E008",
+    "source_id": "B01",
+    "target_id": "B05",
+    "source_identity": "甲基紫精MV",
+    "evidence_identity": "乙基紫精EV",
+    "original_relation_type": "IMPROVES",
+    "relation_type": "EXCLUDED",
+    "relation_class": "excluded",
+    "count_in_dataset": false,
+    "evidence_location": "S1 §2.2 line119 [40]",
+    "reason": "证据描述乙基紫精EV，原源节点B01对应甲基紫精MV，身份不一致；排除出已核实发展关系，不猜测替换节点。",
+    "revision_date": "2026-11-24",
+    "original_record": "原始候选包另行留存；此为公开排除记录。"
+  }
+]

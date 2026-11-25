@@ -1,0 +1,14 @@
+label,count_in_342_dedup,count_whole_db
+Material,7377,7377
+Value,6805,6805
+Property,5027,5027
+Condition,3038,3038
+Method,1824,1824
+Component,1439,1439
+Reaction,1130,1130
+Device,1142,1142
+Mechanism,959,959
+FunctionalGroup,756,756
+Catalyst,720,720
+Species,437,437
+Entity(generic),1,1

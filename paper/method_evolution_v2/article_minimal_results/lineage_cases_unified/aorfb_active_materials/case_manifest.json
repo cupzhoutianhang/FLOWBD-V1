@@ -1,0 +1,58 @@
+{
+  "case_id": "aorfb_active_materials",
+  "title_cn": "水系有机液流电池活性材料的分子工程与性能优化谱系",
+  "title_en": "AORFB active-molecule engineering lineage",
+  "subtitle": "蒽醌负极(蓝)与紫精负极(绿)两条化学家族路线的分子工程双轨演化",
+  "research_domain": "水系有机液流电池活性材料分子工程",
+  "corpus_scope": "FlowBD 337篇中文储能文献语料（PDF→Markdown全文）",
+  "source_document_count": 2,
+  "candidate_node_count": 41,
+  "verifiable_node_count": 41,
+  "main_figure_node_count": 8,
+  "direct_evolution_count": 10,
+  "baseline_comparison_count": 2,
+  "node_performance_comparison_count": 0,
+  "route_association_count": 25,
+  "route_figure_only_count": 0,
+  "all_nodes_year_start": 2014,
+  "all_nodes_year_end": 2022,
+  "main_figure_year_start": 2014,
+  "main_figure_year_end": 2019,
+  "year_start": 2014,
+  "year_end": 2019,
+  "branch_count": 2,
+  "evidence_boundary": "单篇系统性综述(S1，语料内)文本层面可定位，综述转引的一次论文未在当前语料内独立核验；S2交叉印证起点节点。",
+  "primary_source_status": "全部节点为综述转引一次文献，未独立核验",
+  "single_source_bias": "是（系统性谱系高度依赖S1单篇综述）",
+  "recommended_use": "formal_case",
+  "figure_version": "20261124-exclude-AO_E008; 4条主图直接关系",
+  "data_version": "1.1",
+  "last_updated": "2026-09-07",
+  "notes": "证据描述乙基紫精EV，原源节点B01对应甲基紫精MV，身份不一致；排除出已核实发展关系，不猜测替换节点。 其他关系沿用历史快照；详见公开范围说明。",
+  "_derived": {
+    "main_figure_edge_count": 7,
+    "main_figure_edges_by_class": {
+      "direct_evolution": 4,
+      "baseline_comparison": 2,
+      "node_performance_comparison": 0,
+      "route_association": 1
+    },
+    "main_figure_edges_by_line_style": {
+      "solid": 4,
+      "dash_dot": 2,
+      "dashed": 1
+    },
+    "route_association_dataset_count": 25,
+    "route_association_figure_only_count": 0,
+    "main_figure_route_dataset": 1,
+    "main_figure_route_figure_only": 0,
+    "year_range_all_nodes": [
+      2014,
+      2022
+    ],
+    "year_range_main_figure": [
+      2014,
+      2019
+    ]
+  }
+}
